@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Saira";
+}
+
+body {
+  padding: 1em 6em 1em 6em;
+}
+/*<header class="header contaier">
+      <nav class="header__navbar">
+        <a href="#">INÍCIO</a>
+        <a href="#">SOBRE</a>
+        <a href="#">HABILIDADES</a>
+        <a href="#">PROJETOS</a>
+        <a href="#">CONTATO</a>
+      </nav>
+    </header>*/
+.header__navbar {
+  padding-bottom: 1.75em;
+  padding-top: 1.75em;
+}
+.header__navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.header__navbar a {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  font-size: 20px;
+  font-weight: bold;
+  /*alterar depois*/
+}
+.header__navbar > a:hover {
+  border-bottom: 2px solid black;
+}
+.apresentacao {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.apresentacao__texto {
+  display: flex;
+}
+.apresentacao__informacao {
+  font-size: 1.96em;
+}
+.img-perfil {
+  border: 1px solid red;
+  border-radius: 40% 1% 40% 1%;
+  /*mudar a cor de fundo background-color: ; */
+}
+/*redes*/
+.redes {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.redes > li {
+  list-style: none;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+}
+.redes > li > span {
+  padding: 0.75em;
+}
+.redes {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+/*tamanho das seçoes*/
+.apresentacao {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  height: 70vh;
+}
+.redes-socias {
+  margin-bottom: 5%;
+  padding: 1%;
+}
+.sobre-mim {
+  height: 50vh;
+}
+.skill {
+}
+.formacao {
+}
+.experiencia {
+}
+/**/
+.sobre-mim{
+  padding-left:3% ;
+  padding-right:3% ;
+}
+.sobre-mim__dados {
+  padding-left:3% ;
+  padding-right:3% ;
+  height: 100%;
+}
+.sobre-mim__dados > div {
+  display: flex;
+  align-items: center;
+
+}
+.sobre-mim__dados > div > p {
+  padding-left: 1%;
+}
+.sobre-mim__dados-sobre {
+  margin-left: 4%;
+}
+/*.seta {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.75em;
+  justify-content: center;
+  align-items: center;
+} */
+/*arrumas tamanho depois
+section {
+  height: 80vh;
+  margin-bottom: 12%;
+  margin-top: 12%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+*/
