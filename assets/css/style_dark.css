@@ -92,9 +92,11 @@ body {
 .sobre-mim {
   height: 50vh;
 }
-
+.skill {
+  height: 100vh;
+}
 .formacao {
-  margin-top: 10%;
+  margin-top: 100%;
 }
 .experiencia {
 }
@@ -135,95 +137,20 @@ body {
 .tam {
   width: 3em;
   height: 3em;
-}
-.skill > div > h2 {
-  font-size: 36px;
-  margin-top: 10%;
-  margin-bottom: 3%;
+  background-color: red;
 }
 .skill__image {
   display: flex;
-
+  
   flex-wrap: wrap;
 }
-.skill__image-div {
+.skill__image-div{
   display: flex;
   flex-direction: column;
   padding: 1em;
-  flex-basis: 25%;
-  box-sizing: border-box;
-}
-.hobbies > div > h2 {
-  font-size: 36px;
-  margin-top: 10%;
-  margin-bottom: 3%;
-}
-.hobbies__image {
-  width: 100%;
-  height: 100%;
-}
-.hobbies__image-div {
-  margin-top: 5%;
-}
-.hobbies__image-div > h2 {
-  margin-bottom: 1%;
-}
-.formacao {
-}
-.formacao {
-  margin-bottom: 5%;
-}
-.formacao__img1 {
-  height: 256px;
-  width: 256px;
-}
-.formacao__img2 {
-  height: 256px;
-  width: 256px;
-}
-.formacao__img3 {
-  height: 256px;
-  width: 256px;
-}
-.formacao__container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding: 1%;
-  background-color: azure;
-}
-.formacao__titulo > h2 {
-  font-size: 36px;
-}
-.formacao__img-div {
-}
-
-.experiencia {
+  flex-basis:25% ; 
+  box-sizing: border-box; 
   
-}
-
-.experiencia__div{
-  display: flex;
-  justify-content: space-between;
-  gap: 5%;
-  
- 
-}
-.experiencia__projetos-container{
- 
-  /*border: 1px solid aqua;*/
-  height:auto ;
-  padding: 20px;
-}
-.experiencia__link-img{
-  display: flex;
-  justify-content: space-evenly;
-  max-height: 72px;
-  padding-top: 2%;
-}
-.experiencia__link-img > a> img{
-  height: 72px;
 }
 /*.seta {
   display: flex;
