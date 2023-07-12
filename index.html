@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/code-icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio</title>
   </head>
@@ -84,7 +85,7 @@
             <h2>3</h2>
             <p>Nasci em Nova Iguaçu , Rio De Janeiro - Brasil.</p>
           </div>
-          <!--Meu nome é Wellington, tenho 19 anos e sou um estudante dedicado de desenvolvimento web pela Alura e Oracle ONE. Além disso, estou cursando Engenharia de Software para aprofundar meus conhecimentos nessa área fascinante.  -->
+          
           <div>
             <h2>4</h2>
             <p>
@@ -232,7 +233,7 @@
       </section>
       <section class="formacao">
         <span class="formacao__titulo">
-          <h2>Formação Acadêmica</h2>
+          <h2>FORMAÇÃO ACADÊMICA </h2>
         </span>
         <div class="formacao__container">
           <div class="formacao__img-div">
@@ -261,89 +262,108 @@
         </div>
       </section>
       <section class="experiencia">
-        <h2>experiencia</h2>
+        <h2>EXPERIENCIA</h2>
         <div class="experiencia__div">
           <div class="experiencia__projetos-container">
             <div class="experiencia__projetos-div">
               <h2>Portfolio One</h2>
               <h3>HTML, CSS, JAVASCRIPT</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                accusamus sapiente fugiat deserunt unde dicta molestias natus,
-                fuga modi alias corrupti incidunt quia labore possimus provident
-                non culpa. Obcaecati, maxime.
+                Bem-vindo ao meu portfólio! Aqui, compartilho os resultados do meu constante aprendizado e aprimoramento nas áreas de HTML, CSS e JavaScript.
               </p>
-             <div class="experiencia__link-img">
-              <a href="github.com"
-              ><img src="assets/img/github-light-mode.svg" alt=""
-            /></a>
-            <a href="google.com"
-              ><img src="assets/img/deploy-light-mode.svg" alt=""
-            /></a>
-             </div> 
+              <div class="experiencia__link-img">
+                <a href="github.com"
+                  ><img src="assets/img/github-light-mode.svg" alt=""
+                /></a>
+                <a href="google.com"
+                  ><img src="assets/img/deploy-light-mode.svg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <div class="experiencia__projetos-container">
             <div class="experiencia__projetos-div">
-              <h2>Portfolio One</h2>
+              <h2>Decoder ONE</h2>
               <h3>HTML, CSS, JAVASCRIPT</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                accusamus sapiente fugiat deserunt unde dicta molestias natus,
-                fuga modi alias corrupti incidunt quia labore possimus provident
-                non culpa. Obcaecati, maxime.
+                Seja bem-vindo ao meu decodificador de textos!
               </p>
               <div class="experiencia__link-img">
                 <a href="github.com"
-                ><img src="assets/img/github-light-mode.svg" alt=""
-              /></a>
-              <a href="google.com"
-                ><img src="assets/img/deploy-light-mode.svg" alt=""
-              /></a>
-               </div> 
+                  ><img src="assets/img/github-light-mode.svg" alt=""
+                /></a>
+                <a href="google.com"
+                  ><img src="assets/img/deploy-light-mode.svg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
           <div class="experiencia__projetos-container">
             <div class="experiencia__projetos-div">
-              <h2>Portfolio One</h2>
-              <h3>HTML, CSS, JAVASCRIPT</h3>
+              <h2>Login Page</h2>
+              <h3>HTML e CSS</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                accusamus sapiente fugiat deserunt unde dicta molestias natus,
-                fuga modi alias corrupti incidunt quia labore possimus provident
-                non culpa. Obcaecati, maxime.
+                Página de login criada e baseado em um tema estilo dark purple
               </p>
               <div class="experiencia__link-img">
                 <a href="github.com"
-                ><img src="assets/img/github-light-mode.svg" alt=""
-              /></a>
-              <a href="google.com"
-                ><img src="assets/img/deploy-light-mode.svg" alt=""
-              /></a>
-               </div> 
+                  ><img src="assets/img/github-light-mode.svg" alt=""
+                /></a>
+                <a href="google.com"
+                  ><img src="assets/img/deploy-light-mode.svg" alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
-        
       </section>
       <section class="form">
-        <form>
-          <input type="text" placeholder="Seu nome" />
-          <input type="email" name="email" id="email" />
-          <input type="text" placeholder="Assunto" />
-          <textarea
-            name="mensagem"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="mensagem"
-          ></textarea>
-          <button>Enviar</button>
-        </form>
+        <h1>CONTATO</h1>
+        <div class="form__div">
+          <form>
+            <div class="label-float">
+              <input id="name" name="name" type="text" placeholder=" " required/>
+              <label for="name">Nome</label>
+            </div>
+            <div class="label-float">
+              <input
+                name="email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" "
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="label-float">
+              <input id="assunto" name="assunto" type="text" placeholder=" " />
+              <label for="assunto">Assunto</label>
+            </div>
+            
+              <textarea
+              class="teste"
+                name="mensagem"
+                id="mensagem"
+                cols="30"
+                rows="10"
+                placeholder=" Mensage,"
+                required
+              ></textarea>
+              
+            
+            <button class="btn">Enviar E-mail</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <h2>Desenvolvido por <a href="wwww">Wellington</a></h2>
+      <h2>Desenvolvido por <a href="wwww"> Wellington © 2023</a></h2>
+      <ul class="footer__lista">
+        <li><a href="">Linkedin</a></li>
+        <li><a href="">GitHub</a></li>
+        <li><a href="">Email</a></li>
+      </ul>
     </footer>
   </body>
 </html>

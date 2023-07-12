@@ -34,6 +34,7 @@ body {
   margin-left: 1.5em;
   font-size: 20px;
   font-weight: bold;
+  color: #000;
   /*alterar depois*/
 }
 .header__navbar > a:hover {
@@ -51,7 +52,7 @@ body {
   font-size: 1.96em;
 }
 .img-perfil {
-  border: 1px solid red;
+  border: 1px solid #000;
   border-radius: 40% 1% 40% 1%;
   /*mudar a cor de fundo background-color: ; */
 }
@@ -127,7 +128,7 @@ body {
   font-size: 35px;
 }
 .sobre-mim__dados-sobre {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 400;
 }
 
@@ -191,27 +192,31 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1%;
-  background-color: azure;
+ background-color: #f9f9f9;
 }
 .formacao__titulo > h2 {
   font-size: 36px;
 }
 .formacao__img-div {
+  
 }
 
 .experiencia {
   
 }
+.experiencia > h2{
+  font-size: 36px;
+}
 
 .experiencia__div{
   display: flex;
   justify-content: space-between;
-  gap: 5%;
   
  
 }
 .experiencia__projetos-container{
- 
+ box-sizing: border-box;
+ flex-basis: 80%;
   /*border: 1px solid aqua;*/
   height:auto ;
   padding: 20px;
@@ -225,6 +230,116 @@ body {
 .experiencia__link-img > a> img{
   height: 72px;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+ width: 80%;
+ 
+
+}
+.form >h1{
+  font-size: 36px;
+}
+.form__div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+form > div > input, textarea{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  font-size: 16px;
+}
+
+form > div > input, label{
+  max-width: 100%;
+  width: 100%;
+}
+textarea{
+  padding: 2%;
+}
+.teste{
+  max-width: 1020px;
+  max-height: 300px;
+}
+
+/*refazer do meu jeito*/
+.label-float{
+  position: relative;
+  padding-top: 13px;
+}
+.label-float > input{
+  padding-top: 2%;
+}
+.label-float input:focus{
+  border-bottom: 2px solid #000000;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+  color: #000;
+}
+
+.label-float input:required:invalid + label:before{
+  content: '* ';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 16px;
+  margin-top: 0;
+  color: #000000;
+}
+/**/
+.btn{
+  border: none;
+  background-color: #000;
+font-size: 16px;
+color: #fff;
+}
+
+
+footer{
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+.footer__lista{
+  padding: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  
+
+}
+.footer__lista >li{
+  list-style: none;
+
+}
+footer > h2,li,a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
 /*.seta {
   display: flex;
   flex-direction: column;
@@ -241,3 +356,10 @@ section {
   padding-bottom: 1%;
 }
 */
+
+
+@media only screen and (max-width: 767px) {
+  body{
+    background-color: red;
+  }
+}
