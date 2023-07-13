@@ -10,8 +10,14 @@
 body {
   padding: 1em 6em 1em 6em;
 }
-
+.header__container{
+  background-color: #fff;
+  width: 100%;
+}
 .header__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
   background-color: #fff;
   padding-bottom: 1.75em;
   padding-top: 1.75em;
