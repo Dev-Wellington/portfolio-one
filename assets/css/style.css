@@ -10,15 +10,7 @@
 body {
   padding: 1em 6em 1em 6em;
 }
-/*<header class="header contaier">
-      <nav class="header__navbar">
-        <a href="#">INÍCIO</a>
-        <a href="#">SOBRE</a>
-        <a href="#">HABILIDADES</a>
-        <a href="#">PROJETOS</a>
-        <a href="#">CONTATO</a>
-      </nav>
-    </header>*/
+
 .header__navbar {
   padding-bottom: 1.75em;
   padding-top: 1.75em;
@@ -69,7 +61,10 @@ body {
   font-weight: 600;
   display: flex;
 }
-.redes > li > span {
+.redes > li >a{
+  font-size: 30px;
+}
+.redes > li > a {
   padding: 0.75em;
 }
 .redes {
@@ -267,7 +262,7 @@ textarea{
   max-height: 300px;
 }
 
-/*refazer do meu jeito*/
+/*refazer*/
 .label-float{
   position: relative;
   padding-top: 13px;
@@ -329,6 +324,9 @@ footer{
   justify-content: space-around;
   
 
+}
+.footer__lista> li:hover{
+  
 }
 .footer__lista >li{
   list-style: none;

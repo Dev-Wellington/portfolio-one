@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/img/code-icon.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/code-icon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header contaier">
       <nav class="header__navbar">
-        <a href="#">INÍCIO</a>
-        <a href="#">SOBRE</a>
-        <a href="#">HABILIDADES</a>
-        <a href="#">PROJETOS</a>
-        <a href="#">CONTATO</a>
+        <a href="#apresentacao">INÍCIO</a>
+        <a href="#sobre-mim">SOBRE</a>
+        <a href="#habilidades">HABILIDADES</a>
+        <a href="#projetos">PROJETOS</a>
+        <a href="#contatos">CONTATO</a>
       </nav>
     </header>
 
     <main>
-      <section class="apresentacao">
+      <section class="apresentacao" id="apresentacao">
         <div class="apresentacao__texto">
           <div class="apresentacao__informacao">
             <h1>Olá! Meu nome é Wellington e sou um desenvolvedor front-end</h1>
@@ -40,31 +44,29 @@
             />
           </div>
 
-          <!--<span class="seta">
-            <img src="assets/img/seta-baixa.svg" height="30px" />
-            <img src="assets/img/seta-baixa.svg" height="30px" />
-            <img src="assets/img/seta-baixa.svg" height="30px" />
-          </span>-->
+         
         </div>
       </section>
       <section class="redes-socias">
         <ul class="redes">
           <li>
-            <span>Linkedin</span
-            ><img src="assets/img/arrow.d6e657c1.svg" alt="" />
+            <a href="https://www.linkedin.com/in/wellington-ds-silva/"
+              >Linkedin</a
+            >
+            <img src="assets/img/arrow.d6e657c1.svg" alt="" />
           </li>
           <li>
-            <span>GitHub</span
-            ><img src="assets/img/arrow.d6e657c1.svg" alt="" />
+            <a href="https://github.com/Dev-Wellington">GitHub</a>
+            <img src="assets/img/arrow.d6e657c1.svg" alt="" />
           </li>
           <li>
-            <span>E-mail</span
-            ><img src="assets/img/arrow.d6e657c1.svg" alt="" />
+            <a href="mailto:joycewellingtonaprigio2@gmail.com">E-mail</a>
+            <img src="assets/img/arrow.d6e657c1.svg" alt="" />
           </li>
         </ul>
       </section>
 
-      <section class="sobre-mim">
+      <section class="sobre-mim" id="sobre-mim">
         <section class="sobre-mim__dados">
           <h2 class="sobre-mim__dados-sobre">Sobre</h2>
 
@@ -85,7 +87,7 @@
             <h2>3</h2>
             <p>Nasci em Nova Iguaçu , Rio De Janeiro - Brasil.</p>
           </div>
-          
+
           <div>
             <h2>4</h2>
             <p>
@@ -95,7 +97,7 @@
           </div>
         </section>
       </section>
-      <section class="skill">
+      <section class="skill" id="habilidades">
         <div>
           <h2>SKILLS</h2>
           <div class="skill__image">
@@ -233,7 +235,7 @@
       </section>
       <section class="formacao">
         <span class="formacao__titulo">
-          <h2>FORMAÇÃO ACADÊMICA </h2>
+          <h2>FORMAÇÃO ACADÊMICA</h2>
         </span>
         <div class="formacao__container">
           <div class="formacao__img-div">
@@ -261,7 +263,7 @@
           </div>
         </div>
       </section>
-      <section class="experiencia">
+      <section class="experiencia" id="projetos">
         <h2>EXPERIENCIA</h2>
         <div class="experiencia__div">
           <div class="experiencia__projetos-container">
@@ -269,13 +271,15 @@
               <h2>Portfolio One</h2>
               <h3>HTML, CSS, JAVASCRIPT</h3>
               <p>
-                Bem-vindo ao meu portfólio! Aqui, compartilho os resultados do meu constante aprendizado e aprimoramento nas áreas de HTML, CSS e JavaScript.
+                Bem-vindo ao meu portfólio! Aqui, compartilho os resultados do
+                meu constante aprendizado e aprimoramento nas áreas de HTML, CSS
+                e JavaScript.
               </p>
               <div class="experiencia__link-img">
-                <a href="github.com"
+                <a href="https://github.com/Dev-Wellington/portfolio-one"
                   ><img src="assets/img/github-light-mode.svg" alt=""
                 /></a>
-                <a href="google.com"
+                <a href="https://dev-wellington.github.io/portfolio-one/"
                   ><img src="assets/img/deploy-light-mode.svg" alt=""
                 /></a>
               </div>
@@ -285,14 +289,12 @@
             <div class="experiencia__projetos-div">
               <h2>Decoder ONE</h2>
               <h3>HTML, CSS, JAVASCRIPT</h3>
-              <p>
-                Seja bem-vindo ao meu decodificador de textos!
-              </p>
+              <p>Seja bem-vindo ao meu decodificador de textos!</p>
               <div class="experiencia__link-img">
-                <a href="github.com"
+                <a href="https://github.com/Dev-Wellington/decoder-one"
                   ><img src="assets/img/github-light-mode.svg" alt=""
                 /></a>
-                <a href="google.com"
+                <a href="https://dev-wellington.github.io/decoder-one/"
                   ><img src="assets/img/deploy-light-mode.svg" alt=""
                 /></a>
               </div>
@@ -306,10 +308,10 @@
                 Página de login criada e baseado em um tema estilo dark purple
               </p>
               <div class="experiencia__link-img">
-                <a href="github.com"
+                <a href="https://github.com/Dev-Wellington/login-page"
                   ><img src="assets/img/github-light-mode.svg" alt=""
                 /></a>
-                <a href="google.com"
+                <a href="https://dev-wellington.github.io/login-page/"
                   ><img src="assets/img/deploy-light-mode.svg" alt=""
                 /></a>
               </div>
@@ -317,12 +319,18 @@
           </div>
         </div>
       </section>
-      <section class="form">
+      <section class="form" id="contatos">
         <h1>CONTATO</h1>
         <div class="form__div">
           <form>
             <div class="label-float">
-              <input id="name" name="name" type="text" placeholder=" " required/>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder=" "
+                required
+              />
               <label for="name">Nome</label>
             </div>
             <div class="label-float">
@@ -340,18 +348,17 @@
               <input id="assunto" name="assunto" type="text" placeholder=" " />
               <label for="assunto">Assunto</label>
             </div>
-            
-              <textarea
+
+            <textarea
               class="teste"
-                name="mensagem"
-                id="mensagem"
-                cols="30"
-                rows="10"
-                placeholder=" Mensage,"
-                required
-              ></textarea>
-              
-            
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+              placeholder=" Mensage,"
+              required
+            ></textarea>
+
             <button class="btn">Enviar E-mail</button>
           </form>
         </div>
@@ -360,9 +367,9 @@
     <footer>
       <h2>Desenvolvido por <a href="wwww"> Wellington © 2023</a></h2>
       <ul class="footer__lista">
-        <li><a href="">Linkedin</a></li>
-        <li><a href="">GitHub</a></li>
-        <li><a href="">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/wellington-ds-silva/">Linkedin</a></li>
+        <li><a href="https://github.com/Dev-Wellington">GitHub</a></li>
+        <li><a href="mailto:joycewellingtonaprigio2@gmail.com">Email</a></li>
       </ul>
     </footer>
   </body>
