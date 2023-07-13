@@ -360,8 +360,7 @@ section {
     font-size: 1.96em;
   }
   .img-perfil {
-    height: 0;
-    width: 0;
+   display: none;
   }
   .skill__image-div {
     flex-basis: 50%;
@@ -402,8 +401,97 @@ section {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  body {
-    background-color: red;
+@media only screen and (max-width: 428px) {
+  *,body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Saira";
+  
+  }
+  body{
+    padding: 2%;
+  }
+  .header__navbar{
+    display: flex;
+    flex-direction: column;
+   display: none;
+   
+  }
+  .apresentacao__informacao{
+    padding-left: 2%;
+  }
+  .apresentacao__informacao>h1{
+font-size: 1em;
+  }
+  .apresentacao__informacao>p{
+    font-size: 0.88em;
+  }
+  .header__container{
+
+  }
+  .img-perfil{
+    display: none;
+  }
+  .formacao__img1,
+  .formacao__img2,
+  .formacao__img3 {
+    height: 128px;
+    width: 100%;
+  }
+  .skill__image-div {
+    flex-basis: 100%;
+  }
+  .sobre-mim{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  .sobre-mim__dados{
+    height: 100%;
+  }
+  .hobbies__image-div{
+    padding: 16px;
+  }
+  .formacao__container{
+    flex-direction: column;
+    
+  }
+  .experiencia__projetos-container{
+    padding: 16px;
+  }
+  .experiencia__div {
+    flex-direction: column;
+  }
+  .experiencia__link-img {
+    justify-content: flex-start;
+  }
+  .experiencia__link-img > a > img {
+    height: 36px;
+    width: 36px;
+  }
+  .experiencia__link-img > a {
+    margin-left: 5%;
+  }
+  .redes{
+    display: none;
+  }
+  footer {
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+  }
+  footer > h2,
+  li,
+  a {
+    font-size: 25px;
+  }
+  footer > h2 {
+    display: none;
+  }
+  .footer__lista{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
