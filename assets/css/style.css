@@ -12,6 +12,7 @@ body {
 }
 
 .header__navbar {
+  background-color: #fff;
   padding-bottom: 1.75em;
   padding-top: 1.75em;
 }
@@ -61,7 +62,7 @@ body {
   font-weight: 600;
   display: flex;
 }
-.redes > li >a{
+.redes > li > a {
   font-size: 30px;
 }
 .redes > li > a {
@@ -187,152 +188,144 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1%;
- background-color: #f9f9f9;
+  background-color: #f9f9f9;
 }
 .formacao__titulo > h2 {
   font-size: 36px;
 }
 .formacao__img-div {
-  
 }
 
 .experiencia {
-  
 }
-.experiencia > h2{
+.experiencia > h2 {
   font-size: 36px;
 }
 
-.experiencia__div{
+.experiencia__div {
   display: flex;
   justify-content: space-between;
-  
- 
 }
-.experiencia__projetos-container{
- box-sizing: border-box;
- flex-basis: 80%;
+.experiencia__projetos-container {
+  box-sizing: border-box;
+  flex-basis: 80%;
   /*border: 1px solid aqua;*/
-  height:auto ;
+  height: auto;
   padding: 20px;
 }
-.experiencia__link-img{
+.experiencia__link-img {
   display: flex;
   justify-content: space-evenly;
   max-height: 72px;
   padding-top: 2%;
 }
-.experiencia__link-img > a> img{
+.experiencia__link-img > a > img {
   height: 72px;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
- width: 80%;
- 
-
+  width: 80%;
 }
-.form >h1{
+.form > h1 {
   font-size: 36px;
 }
-.form__div{
+.form__div {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-form > div > input, textarea{
+form > div > input,
+textarea {
   border: none;
   outline: none;
   border-bottom: 1px solid #000;
   font-size: 16px;
 }
 
-form > div > input, label{
+form > div > input,
+label {
   max-width: 100%;
   width: 100%;
 }
-textarea{
+textarea {
   padding: 2%;
 }
-.teste{
+.teste {
   max-width: 1020px;
   max-height: 300px;
 }
 
 /*refazer*/
-.label-float{
+.label-float {
   position: relative;
   padding-top: 13px;
 }
-.label-float > input{
+.label-float > input {
   padding-top: 2%;
 }
-.label-float input:focus{
+.label-float input:focus {
   border-bottom: 2px solid #000000;
 }
 
-.label-float input::placeholder{
-  color:transparent;
+.label-float input::placeholder {
+  color: transparent;
 }
 
-.label-float label{
+.label-float label {
   pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 13px;
-  transition: all .3s ease-out;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
 }
 
-.label-float input:required:invalid + label{
+.label-float input:required:invalid + label {
   color: #000;
 }
 
-.label-float input:required:invalid + label:before{
-  content: '* ';
+.label-float input:required:invalid + label:before {
+  content: "* ";
 }
 .label-float input:focus + label,
-.label-float input:not(:placeholder-shown) + label{
+.label-float input:not(:placeholder-shown) + label {
   font-size: 16px;
   margin-top: 0;
   color: #000000;
 }
 /**/
-.btn{
+.btn {
   border: none;
   background-color: #000;
-font-size: 16px;
-color: #fff;
+  font-size: 16px;
+  color: #fff;
 }
 
-
-footer{
+footer {
   height: 30vh;
   display: flex;
   justify-content: space-between;
   align-items: last baseline;
 }
-.footer__lista{
+.footer__lista {
   padding: 10px;
   display: flex;
   width: 50%;
   justify-content: space-around;
-  
-
 }
-.footer__lista> li:hover{
-  
+.footer__lista > li:hover {
 }
-.footer__lista >li{
+.footer__lista > li {
   list-style: none;
-
 }
-footer > h2,li,a{
+footer > h2,
+li,
+a {
   font-size: 20px;
   font-weight: 600;
   color: #000;
@@ -354,10 +347,63 @@ section {
   padding-bottom: 1%;
 }
 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .apresentacao {
+    padding-top: 6%;
+    height: 100%;
+  }
+  .apresentacao__texto {
+    display: flex;
+    flex-direction: column;
+  }
+  .apresentacao__informacao {
+    font-size: 1.96em;
+  }
+  .img-perfil {
+    height: 0;
+    width: 0;
+  }
+  .skill__image-div {
+    flex-basis: 50%;
+  }
 
+  .formacao__img1,
+  .formacao__img2,
+  .formacao__img3 {
+    height: 128px;
+    width: 128px;
+  }
+
+  .experiencia__div {
+    flex-direction: column;
+  }
+  .experiencia__link-img {
+    justify-content: flex-start;
+  }
+  .experiencia__link-img > a > img {
+    height: 36px;
+    width: 36px;
+  }
+  .experiencia__link-img > a {
+    margin-left: 5%;
+  }
+
+  footer {
+    height: 15vh;
+    justify-content: center;
+  }
+  footer > h2,
+  li,
+  a {
+    font-size: 25px;
+  }
+  footer > h2 {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 767px) {
-  body{
+  body {
     background-color: red;
   }
 }
