@@ -10,7 +10,8 @@
 body {
   padding: 1em 6em 1em 6em;
 }
-.header__container{
+
+.header__container {
   background-color: #fff;
   width: 100%;
 }
@@ -366,7 +367,7 @@ section {
     font-size: 1.96em;
   }
   .img-perfil {
-   display: none;
+    display: none;
   }
   .skill__image-div {
     flex-basis: 50%;
@@ -408,35 +409,43 @@ section {
 }
 
 @media only screen and (max-width: 428px) {
-  *,body {
+  *,
+  body {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: "Saira";
-  
   }
-  body{
+  body {
     padding: 2%;
   }
-  .header__navbar{
+  .header__navbar {
     display: flex;
     flex-direction: column;
-   display: none;
-   
+    display: none;
   }
-  .apresentacao__informacao{
-    padding-left: 2%;
+  .apresentacao {
+    height: 100%;
+    
   }
-  .apresentacao__informacao>h1{
-font-size: 1em;
-  }
-  .apresentacao__informacao>p{
-    font-size: 0.88em;
-  }
-  .header__container{
 
+  .apresentacao__informacao {
+    padding-left: 2%;
+   justify-content: space-between;
   }
-  .img-perfil{
+  /*.apresentacao__texto,.apresentacao,.apresentacao__informacao{
+    max-height: 525px;
+  }*/
+  .apresentacao__informacao > h1 {
+    font-size: 31px;
+  }
+  .apresentacao__informacao > p {
+    font-size: 28px;
+  
+  }
+  .header__container {
+  }
+  .img-perfil {
     display: none;
   }
   .formacao__img1,
@@ -448,22 +457,21 @@ font-size: 1em;
   .skill__image-div {
     flex-basis: 100%;
   }
-  .sobre-mim{
+  .sobre-mim {
     padding: 0;
     margin: 0;
     height: 100%;
   }
-  .sobre-mim__dados{
+  .sobre-mim__dados {
     height: 100%;
   }
-  .hobbies__image-div{
+  .hobbies__image-div {
     padding: 16px;
   }
-  .formacao__container{
+  .formacao__container {
     flex-direction: column;
-    
   }
-  .experiencia__projetos-container{
+  .experiencia__projetos-container {
     padding: 16px;
   }
   .experiencia__div {
@@ -479,9 +487,11 @@ font-size: 1em;
   .experiencia__link-img > a {
     margin-left: 5%;
   }
-  .redes{
+  .redes,
+  .redes-socias {
     display: none;
   }
+
   footer {
     height: 10vh;
     width: 100%;
@@ -495,7 +505,7 @@ font-size: 1em;
   footer > h2 {
     display: none;
   }
-  .footer__lista{
+  .footer__lista {
     width: 100%;
     display: flex;
     justify-content: space-around;
