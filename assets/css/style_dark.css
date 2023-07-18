@@ -5,21 +5,24 @@
   padding: 0;
   text-decoration: none;
   font-family: "Saira";
+  color: #fff;
 }
 
 body {
   padding: 1em 6em 1em 6em;
+  background-color: #000;
 }
-/*<header class="header contaier">
-      <nav class="header__navbar">
-        <a href="#">INÍCIO</a>
-        <a href="#">SOBRE</a>
-        <a href="#">HABILIDADES</a>
-        <a href="#">PROJETOS</a>
-        <a href="#">CONTATO</a>
-      </nav>
-    </header>*/
+
+.header__container {
+ 
+  width: 100%;
+}
 .header__navbar {
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000;
   padding-bottom: 1.75em;
   padding-top: 1.75em;
 }
@@ -28,16 +31,23 @@ body {
   top: 0;
   right: 0;
 }
-
+.header__navbar button{
+  height: 31px;
+}
+.img__button{
+  width:31px ;
+  height: 31px;
+}
 .header__navbar a {
   margin-right: 1.5em;
   margin-left: 1.5em;
   font-size: 20px;
   font-weight: bold;
+  color: #fff;
   /*alterar depois*/
 }
 .header__navbar > a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #fff;
 }
 .apresentacao {
   display: flex;
@@ -51,7 +61,7 @@ body {
   font-size: 1.96em;
 }
 .img-perfil {
-  border: 1px solid red;
+  border: 1px solid #fff;
   border-radius: 40% 1% 40% 1%;
   /*mudar a cor de fundo background-color: ; */
 }
@@ -68,7 +78,10 @@ body {
   font-weight: 600;
   display: flex;
 }
-.redes > li > span {
+.redes > li > a {
+  font-size: 30px;
+}
+.redes > li > a {
   padding: 0.75em;
 }
 .redes {
@@ -92,11 +105,9 @@ body {
 .sobre-mim {
   height: 50vh;
 }
-.skill {
-  height: 100vh;
-}
+
 .formacao {
-  margin-top: 100%;
+  margin-top: 10%;
 }
 .experiencia {
 }
@@ -129,7 +140,7 @@ body {
   font-size: 35px;
 }
 .sobre-mim__dados-sobre {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 400;
 }
 
@@ -137,21 +148,213 @@ body {
 .tam {
   width: 3em;
   height: 3em;
-  background-color: red;
+}
+.skill > div > h2 {
+  font-size: 36px;
+  margin-top: 10%;
+  margin-bottom: 3%;
 }
 .skill__image {
   display: flex;
-  
+
   flex-wrap: wrap;
 }
-.skill__image-div{
+.skill__image-div {
   display: flex;
   flex-direction: column;
   padding: 1em;
-  flex-basis:25% ; 
-  box-sizing: border-box; 
+  flex-basis: 25%;
+  box-sizing: border-box;
+}
+.hobbies > div > h2 {
+  font-size: 36px;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.hobbies__image {
+  width: 100%;
+  height: 100%;
+}
+.hobbies__image-div {
+  margin-top: 5%;
+}
+.hobbies__image-div > h2 {
+  margin-bottom: 1%;
+}
+.formacao {
+}
+.formacao {
+  margin-bottom: 5%;
+}
+.formacao__img1 {
+  height: 256px;
+  width: 256px;
+}
+.formacao__img2 {
+  height: 256px;
+  width: 256px;
+}
+.formacao__img3 {
+  height: 256px;
+  width: 256px;
+}
+.formacao__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  background-color: #f9f9f9;
+}
+.formacao__titulo > h2 {
+  font-size: 36px;
+}
+.formacao__img-div {
+}
+
+.experiencia {
+}
+.experiencia > h2 {
+  font-size: 36px;
+}
+
+.experiencia__div {
+  display: flex;
+  justify-content: space-between;
+}
+.experiencia__projetos-container {
+  box-sizing: border-box;
+  flex-basis: 80%;
+  /*border: 1px solid aqua;*/
+  height: auto;
+  padding: 20px;
+}
+.experiencia__link-img {
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 72px;
+  padding-top: 2%;
+}
+.experiencia__link-img > a > img {
+  height: 72px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #000;
+}
+.form > h1 {
+  font-size: 36px;
+}
+.form__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form > div > input,
+textarea {
+  
+  background-color: #000;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+}
+
+form > div > input,
+label {
+  max-width: 100%;
+  width: 100%;
   
 }
+textarea {
+  padding: 2%;
+}
+.teste {
+  max-width: 1020px;
+  max-height: 300px;
+  
+}
+.teste::placeholder{
+  color: #fff;
+}
+/*refazer*/
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+.label-float > input {
+  padding-top: 2%;
+}
+.label-float input:focus {
+  border-bottom: 2px solid #fff;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.label-float input:required:invalid + label {
+  color: #fff;
+}
+
+.label-float input:required:invalid + label:before {
+  content: "* ";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 16px;
+  margin-top: 0;
+  color: #fff;
+}
+/**/
+.btn {
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000;
+}
+
+footer {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+.footer__lista {
+  padding: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.footer__lista > li:hover {
+}
+.footer__lista > li {
+  list-style: none;
+}
+footer > h2,
+li,
+a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
 /*.seta {
   display: flex;
   flex-direction: column;
@@ -168,3 +371,160 @@ section {
   padding-bottom: 1%;
 }
 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .apresentacao {
+    padding-top: 6%;
+    height: 100%;
+  }
+  .apresentacao__texto {
+    display: flex;
+    flex-direction: column;
+  }
+  .apresentacao__informacao {
+    font-size: 1.96em;
+  }
+  .img-perfil {
+    display: none;
+  }
+  .skill__image-div {
+    flex-basis: 50%;
+  }
+
+  .formacao__img1,
+  .formacao__img2,
+  .formacao__img3 {
+    height: 128px;
+    width: 128px;
+  }
+
+  .experiencia__div {
+    flex-direction: column;
+  }
+  .experiencia__link-img {
+    justify-content: flex-start;
+  }
+  .experiencia__link-img > a > img {
+    height: 36px;
+    width: 36px;
+  }
+  .experiencia__link-img > a {
+    margin-left: 5%;
+  }
+
+  footer {
+    height: 15vh;
+    justify-content: center;
+  }
+  footer > h2,
+  li,
+  a {
+    font-size: 25px;
+  }
+  footer > h2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  *,
+  body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Saira";
+  }
+  body {
+    padding: 2%;
+  }
+  .header__navbar {
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  .apresentacao {
+    height: 100%;
+    
+  }
+
+  .apresentacao__informacao {
+    padding-left: 2%;
+   justify-content: space-between;
+  }
+  /*.apresentacao__texto,.apresentacao,.apresentacao__informacao{
+    max-height: 525px;
+  }*/
+  .apresentacao__informacao > h1 {
+    font-size: 31px;
+  }
+  .apresentacao__informacao > p {
+    font-size: 28px;
+  
+  }
+  .header__container {
+  }
+  .img-perfil {
+    display: none;
+  }
+  .formacao__img1,
+  .formacao__img2,
+  .formacao__img3 {
+    height: 128px;
+    width: 100%;
+  }
+  .skill__image-div {
+    flex-basis: 100%;
+  }
+  .sobre-mim {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+  .sobre-mim__dados {
+    height: 100%;
+  }
+  .hobbies__image-div {
+    padding: 16px;
+  }
+  .formacao__container {
+    flex-direction: column;
+  }
+  .experiencia__projetos-container {
+    padding: 16px;
+  }
+  .experiencia__div {
+    flex-direction: column;
+  }
+  .experiencia__link-img {
+    justify-content: flex-start;
+  }
+  .experiencia__link-img > a > img {
+    height: 36px;
+    width: 36px;
+  }
+  .experiencia__link-img > a {
+    margin-left: 5%;
+  }
+  .redes,
+  .redes-socias {
+    display: none;
+  }
+
+  footer {
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+  }
+  footer > h2,
+  li,
+  a {
+    font-size: 25px;
+  }
+  footer > h2 {
+    display: none;
+  }
+  .footer__lista {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -8,13 +8,14 @@
       href="assets/img/code-icon.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" id="lightModeCss" />
+    <link rel="stylesheet" href="assets/css/style_dark.css" id="darkModeCss" disabled >
     <title>Portfolio</title>
   </head>
   <body>
     <header class="header__container">
       <nav class="header__navbar">
-        
+        <button id="darkModeBtn" ><img src="assets/img/sun-button.svg"class="img__button" alt=""></button>
         <a href="#apresentacao">INÍCIO</a>
         <a href="#sobre-mim">SOBRE</a>
         <a href="#habilidades">HABILIDADES</a>
@@ -356,7 +357,7 @@
               id="mensagem"
               cols="30"
               rows="10"
-              placeholder=" Mensage,"
+              placeholder=" Mensagem"
               required
             ></textarea>
 

@@ -16,6 +16,7 @@ body {
   width: 100%;
 }
 .header__navbar {
+  z-index: 3;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -28,7 +29,13 @@ body {
   top: 0;
   right: 0;
 }
-
+.header__navbar button{
+  height: 31px;
+}
+.img__button{
+  width:31px ;
+  height: 31px;
+}
 .header__navbar a {
   margin-right: 1.5em;
   margin-left: 1.5em;
