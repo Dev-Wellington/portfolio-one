@@ -12,17 +12,18 @@ body {
 }
 
 .header__container {
-  background-color: #fff;
+  
   width: 100%;
 }
 .header__navbar {
   z-index: 3;
   width: 100%;
+  
   display: flex;
-  justify-content: flex-end;
-  background-color: #fff;
-  padding-bottom: 1.75em;
-  padding-top: 1.75em;
+  justify-content: center;
+  background-color: #F6F8FA;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 .header__navbar {
   position: fixed;
@@ -31,16 +32,20 @@ body {
 }
 .header__navbar button{
   height: 31px;
+  background-color: #F6F8FA;
+  outline: none;
+  border: none;
 }
 .img__button{
   width:31px ;
   height: 31px;
+  outline: none;
 }
 .header__navbar a {
   margin-right: 1.5em;
   margin-left: 1.5em;
   font-size: 20px;
-  font-weight: bold;
+  
   color: #000;
   /*alterar depois*/
 }
@@ -107,9 +112,8 @@ body {
 .formacao {
   margin-top: 10%;
 }
-.experiencia {
-}
-/**/
+
+
 .sobre-mim {
   padding-left: 3%;
   padding-right: 3%;
@@ -179,8 +183,7 @@ body {
 .hobbies__image-div > h2 {
   margin-bottom: 1%;
 }
-.formacao {
-}
+
 .formacao {
   margin-bottom: 5%;
 }
@@ -202,15 +205,10 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1%;
-  background-color: #f9f9f9;
+  background-color: #F6F8FA;
 }
 .formacao__titulo > h2 {
   font-size: 36px;
-}
-.formacao__img-div {
-}
-
-.experiencia {
 }
 .experiencia > h2 {
   font-size: 36px;
@@ -332,8 +330,7 @@ footer {
   width: 50%;
   justify-content: space-around;
 }
-.footer__lista > li:hover {
-}
+
 .footer__lista > li {
   list-style: none;
 }
@@ -450,8 +447,7 @@ section {
     font-size: 28px;
   
   }
-  .header__container {
-  }
+  
   .img-perfil {
     display: none;
   }
