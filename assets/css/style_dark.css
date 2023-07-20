@@ -10,7 +10,7 @@
 
 body {
   padding: 1em 6em 1em 6em;
-  
+
   background-color: #010409;
 }
 
@@ -22,7 +22,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #0D1117;
+  background-color: #0d1117;
   padding-bottom: 15px;
   padding-top: 15px;
 }
@@ -33,7 +33,7 @@ body {
 }
 .header__navbar button {
   height: 31px;
-  background-color: #0D1117;
+  background-color: transparent;
   outline: none;
   border: none;
 }
@@ -47,7 +47,6 @@ body {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
-  
 }
 .header__navbar > a:hover {
   border-bottom: 2px solid #fff;
@@ -55,18 +54,26 @@ body {
 .apresentacao {
   display: flex;
   justify-content: center;
-  height: 100%;
+  
 }
 .apresentacao__texto {
   display: flex;
+  width: 100%;
 }
 .apresentacao__informacao {
   font-size: 1.96em;
 }
+.sobre-mim__imagem-perfil{
+
+  min-height: 358px;
+  max-height: 380px;
+  }
 .img-perfil {
   border: 1px solid #fff;
   border-radius: 40% 1% 40% 1%;
-  /*mudar a cor de fundo background-color: ; */
+  min-height: 358px;
+max-height: 380px;
+ 
 }
 /*redes*/
 .redes {
@@ -99,7 +106,7 @@ body {
   margin-bottom: 2%;
   padding-top: 5%;
   padding-bottom: 3%;
-  height: 70vh;
+  height: 100%;
 }
 .redes-socias {
   margin-bottom: 1%;
@@ -204,7 +211,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1%;
-  background-color: #0D1117;
+  background-color: #0d1117;
 }
 .formacao__titulo > h2 {
   font-size: 36px;
@@ -239,7 +246,6 @@ form {
   display: flex;
   flex-direction: column;
   width: 80%;
-  
 }
 .form > h1 {
   font-size: 36px;
@@ -381,7 +387,9 @@ section {
   .skill__image-div {
     flex-basis: 50%;
   }
-
+  .sobre-mim__imagem-perfil{
+    display: none;
+  }
   .formacao__img1,
   .formacao__img2,
   .formacao__img3 {
@@ -402,7 +410,13 @@ section {
   .experiencia__link-img > a {
     margin-left: 5%;
   }
-
+  .redes{
+    align-items: center;
+    
+  }
+  .redes > li >a{
+    font-size: 27px;
+  }
   footer {
     height: 15vh;
     justify-content: center;
@@ -424,6 +438,7 @@ section {
     padding: 0;
     text-decoration: none;
     font-family: "Saira";
+    
   }
   body {
     padding: 2%;
@@ -431,12 +446,18 @@ section {
   .header__navbar {
     display: flex;
     flex-direction: column;
-    display: none;
+    
   }
   .apresentacao {
+    margin-top: 10%;
     height: 100%;
   }
-
+  .header__navbar > a {
+    display: none;
+  }
+  .sobre-mim__imagem-perfil{
+    display: none;
+  }
   .apresentacao__informacao {
     padding-left: 2%;
     justify-content: space-between;
@@ -450,7 +471,7 @@ section {
   .apresentacao__informacao > p {
     font-size: 28px;
   }
-  
+
   .img-perfil {
     display: none;
   }
@@ -459,6 +480,7 @@ section {
   .formacao__img3 {
     height: 128px;
     width: 100%;
+    
   }
   .skill__image-div {
     flex-basis: 100%;
@@ -474,8 +496,22 @@ section {
   .hobbies__image-div {
     padding: 16px;
   }
+  .formacao {
+    height: 100%;
+    
+  }
+  .formacao__container{
+   max-height: 1000px;
+   
+  }
+  .formacao__titulo h2 {
+    font-size: 32px;
+  }
+  
   .formacao__container {
     flex-direction: column;
+
+    padding: 0;
   }
   .experiencia__projetos-container {
     padding: 16px;

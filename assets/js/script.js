@@ -11,7 +11,7 @@ const darkModeBtn = document.getElementById("darkModeBtn");
 const buttonImage = document.getElementById("button");
 
 darkModeBtn.addEventListener("click", () => {
-  const imageName = buttonImage.src.split('/').pop(); // Obtém o nome da imagem
+  const imageName = buttonImage.src.split('/').pop(); 
 
   if (imageName.includes("sun-light-mode")) {
     buttonImage.src = buttonImage.src.replace("sun-light-mode", "moon-dark-mode");
@@ -22,7 +22,7 @@ darkModeBtn.addEventListener("click", () => {
 
 
 
-const skillImages = document.querySelectorAll(".skill__image-div img , .hobbies__image-div img , .formacao__img-div img , .experiencia__link-img img");
+const skillImages = document.querySelectorAll(".skill__image-div img , .hobbies__image-div img , .formacao__img-div img , .experiencia__link-img img , .redes img");
 
 darkModeButton.addEventListener("click", () => {
   if (darkModeButton.classList.contains("active")) {

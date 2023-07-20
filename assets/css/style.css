@@ -32,7 +32,7 @@ body {
 }
 .header__navbar button{
   height: 31px;
-  background-color: #F6F8FA;
+  background-color: transparent;
   outline: none;
   border: none;
 }
@@ -55,18 +55,28 @@ body {
 .apresentacao {
   display: flex;
   justify-content: center;
-  height: 100%;
+  
 }
 .apresentacao__texto {
   display: flex;
+  width: 100%;
 }
 .apresentacao__informacao {
   font-size: 1.96em;
+  
+  
+}
+.sobre-mim__imagem-perfil{
+
+min-height: 358px;
+max-height: 380px;
 }
 .img-perfil {
   border: 1px solid #000;
   border-radius: 40% 1% 40% 1%;
-  /*mudar a cor de fundo background-color: ; */
+  min-height: 358px;
+max-height: 380px;
+  
 }
 /*redes*/
 .redes {
@@ -99,7 +109,7 @@ body {
   margin-bottom: 2%;
   padding-top: 5%;
   padding-bottom: 3%;
-  height: 70vh;
+  height: 100%;
 }
 .redes-socias {
   margin-bottom: 1%;
@@ -376,7 +386,9 @@ section {
   .skill__image-div {
     flex-basis: 50%;
   }
-
+.sobre-mim__imagem-perfil{
+  display: none;
+}
   .formacao__img1,
   .formacao__img2,
   .formacao__img3 {
@@ -397,7 +409,13 @@ section {
   .experiencia__link-img > a {
     margin-left: 5%;
   }
-
+.redes{
+  align-items: center;
+  
+}
+.redes > li >a{
+  font-size: 27px;
+}
   footer {
     height: 15vh;
     justify-content: center;
@@ -423,12 +441,21 @@ section {
   body {
     padding: 2%;
   }
+  
   .header__navbar {
     display: flex;
     flex-direction: column;
+    
+    
+  }
+  
+  .header__navbar >a{
     display: none;
   }
+ 
+ 
   .apresentacao {
+    margin-top: 10%;
     height: 100%;
     
   }
@@ -471,9 +498,16 @@ section {
   .hobbies__image-div {
     padding: 16px;
   }
-  .formacao__container {
-    flex-direction: column;
+  .formacao__titulo h2 {
+    font-size: 32px;
   }
+  
+  .formacao__container {
+    
+    flex-direction: column;
+    padding: 0;
+  }
+ 
   .experiencia__projetos-container {
     padding: 16px;
   }
