@@ -33,9 +33,7 @@ Olá! Sou um entusiasta do desenvolvimento web e estou sempre em busca de novas 
 
 ## Contato
 
-- E-mail: seuemail@example.com
 - LinkedIn: [Meu Perfil no LinkedIn](https://www.linkedin.com/in/wellington-ds-silva/)
 - GitHub: [Meu Perfil no GitHub](https://github.com/Dev-Wellington)
-- Website: [Meu Portfólio Online](link-para-o-seu-website)
 
 Sinta-se à vontade para explorar meus projetos e entrar em contato para discutir colaborações ou oportunidades interessantes!
