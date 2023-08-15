@@ -307,10 +307,11 @@ textarea {
   -moz-transition: all 0.3s ease-out;
 }
 
-.label-float input:required:invalid + label {
-  color: #000;
-}
 
+.error{
+  
+  color: red;
+}
 .label-float input:required:invalid + label:before {
   content: "* ";
 }
@@ -322,12 +323,15 @@ textarea {
 }
 /**/
 .btn {
+  
   border: none;
   background-color: #000;
   font-size: 16px;
   color: #fff;
 }
-
+.btn:hover{
+  cursor: pointer;
+}
 footer {
   height: 30vh;
   display: flex;
@@ -352,22 +356,7 @@ a {
   color: #000;
 }
 
-/*.seta {
-  display: flex;
-  flex-direction: column;
-  padding-top: 1.75em;
-  justify-content: center;
-  align-items: center;
-} */
-/*arrumas tamanho depois
-section {
-  height: 80vh;
-  margin-bottom: 12%;
-  margin-top: 12%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-}
-*/
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .apresentacao {
     padding-top: 6%;

@@ -336,21 +336,23 @@
                 required
               />
               <label for="name">Nome</label>
+              <div id="nameError" class="error"></div>
             </div>
             <div class="label-float">
               <input
                 name="email"
-                type="email"
-                name="email"
+                
                 id="email"
                 placeholder=" "
                 required
               />
               <label for="email">Email</label>
+              <div id="emailError" class="error"></div>
             </div>
             <div class="label-float">
-              <input id="assunto" name="assunto" type="text" placeholder=" " />
+              <input id="assunto" name="assunto" type="text" placeholder=" " required/>
               <label for="assunto">Assunto</label>
+              <div id="assuntoError" class="error"></div>
             </div>
 
             <textarea
@@ -362,8 +364,8 @@
               placeholder=" Mensagem"
               required
             ></textarea>
-
-            <button class="btn">Enviar E-mail</button>
+            <div id="mensagemError" class="error"></div>
+            <button id="submitButton" class="btn" disabled>Enviar E-mail</button>
           </form>
         </div>
       </section>
